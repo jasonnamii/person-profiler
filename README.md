@@ -2,6 +2,11 @@
 
 **7-axis web research engine: extract core DNA traits, strengths, weaknesses, and a 30-second elevator pitch.**
 
+## Prerequisites
+
+- **Claude Cowork or Claude Code** environment
+- **Web search access** — required for real-time person research
+
 ## Goal
 
 person-profiler transforms scattered public information into actionable insight. It structures web signals into 7 strategic axes (Career DNA, Decision Patterns, Vision, Reputation, Personality, Network, Current Context), extracts 5-7 core DNA traits, assesses strengths/weaknesses, and generates a 30-second elevator pitch.
