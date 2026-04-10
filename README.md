@@ -1,5 +1,7 @@
 # person-profiler
 
+> 🇰🇷 [한국어 README](./README.ko.md)
+
 **7-axis web research engine: extract core DNA traits, strengths, weaknesses, and a 30-second elevator pitch.**
 
 ## Prerequisites
