@@ -28,7 +28,7 @@ P1 프레임   →  P2 리서치   →  P3 프로파일링  →  P4 엘베피치
 | P1 | 대상+목적 확인 → 7축 중 적용축 선정 (→ references/7-axis-framework.md) | — | 분석 프레임 | 대상·목적 미확인 |
 | P2 | **Skill("research-frame")** → 축별 독립 웹 리서치 (→ references/p2-research-phase.md) | **research-frame** 필수 | 축별 발견 정리 | 스킬 미호출 / 소스 1개 이하/축 |
 | P3 | 패턴 추출 → DNA·강약점·의사결정 도출 (→ references/p3-profiling-rules.md) | — | §3 중간 산출물 | 증거 없는 DNA |
-| P4 | Layer 1→2→3 수렴 → **Skill("trigger-dictionary")** 엘베피치 (→ references/p4-elevator-pitch.md) | **trigger-dictionary** (엘베피치) | 엘베피치 | 피치 미생성 |
+| P4 | Layer 1→2→3 수렴 → 엘베피치 직접 실행 (→ references/p4-elevator-pitch.md) | 직접 실행 (trigger-dictionary 별도 호출 불필요) | 엘베피치 | 피치 미생성 |
 | §3.5 | §3 중간 산출물 → 3막 서사 템플릿으로 변환 (→ references/s35-report-conversion.md) | — | **최종 리포트** | §3 직접 출력 / 서사 톤 미준수 |
 
 ### P1 프레임 설정
