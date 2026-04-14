@@ -39,7 +39,7 @@ P1 프레임   →  P2 리서치   →  P3 프로파일링  →  P4 엘베피치
 
 ### P2 웹 리서치
 
-**⚠ MANDATORY**: P2 진입 시 반드시 `Skill("research-frame")` 호출하여 리서치 프레임워크를 로드한다.
+**research-frame 연동:** DEEP 분석 시 Skill('research-frame') 호출 필수. **LIGHT 자체분석:** 웹서치 3~5건으로 7축 스캔 가능 — research-frame 호출 없이 자체 수행. 확신도 상한 50 적용.
 
 상세 가이드 → **references/p2-research-phase.md** 참조
 
