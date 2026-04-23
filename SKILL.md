@@ -1,14 +1,24 @@
 ---
 name: person-profiler
-description: 범용 인물 프로파일링 엔진. 웹 리서치 기반 7축 분석(경력DNA·의사결정·비전·평판·개성·관계망·현재상황) → DNA 5~7대 도출 → 강점·약점 판정 → 30초 엘베피치 자동 생성. 심층 분석시 research-frame 연동.
-P1: 인물 프로파일링, 인물 리서치, 인물 분석, DNA 프로파일링, 사람 분석, person profile, person research.
-P2: 분석해줘, 프로파일링해줘, 리서치해줘, 조사해줘, profile, research, analyze.
-P3: person profiling, DNA analysis, elevator pitch, character analysis, reputation analysis.
-P5: 리포트로, 프로필로, 엘베피치로.
-NOT: 채용역량평가(→V3/V4.1 전용도구), 조직분석(→직접수행), 정책기획(→policy-planning).
+description: "범용 인물 프로파일링 엔진. 웹 리서치 기반 7축 분석(경력DNA·의사결정·비전·평판·개성·관계망·현재상황) → DNA 5~7대 도출 → 강점·약점 판정 → 30초 엘베피치 자동 생성. 심층 분석시 research-frame 연동. P1: 인물 프로파일링, 인물 리서치, 인물 분석, DNA 프로파일링, 사람 분석, person profile, person research. P2: 분석해줘, 프로파일링해줘, 리서치해줘, 조사해줘, profile, research, analyze. P3: person profiling, DNA analysis, elevator pitch, character analysis, reputation analysis. P5: 리포트로, 프로필로, 엘베피치로. NOT: 채용역량평가(→V3/V4.1 전용도구), 조직분석(→직접수행), 정책기획(→policy-planning)."
 ---
 
 # Person Profiler — 인물 프로파일링 엔진
+
+---
+
+## ⛔ 절대 규칙
+
+| # | 규칙 |
+|---|------|
+| 1 | 발동 조건 외 임의 실행 금지 |
+| 2 | 출력 형식 준수 — 내부 라벨 사용자 노출 금지 |
+| 3 | UP 존댓말·호칭 규칙 우선 적용 |
+
+### 자체 점검 (self-check)
+SKILL.md ≤10KB · P1 ≥5개 · Gotchas 존재 확인 후 수정 완료.
+
+---
 
 ## §1 PURPOSE
 
@@ -77,3 +87,18 @@ P1 프레임   →  P2 리서치   →  P3 프로파일링  →  P4 엘베피치
 2. **§3.5 리포트 변환 필수** — 중간 산출물 직접 출력 금지 (가장 흔한 실수)
 3. **증거 없는 DNA 금지** — 추론만으로 도출 시 "추정" 태그 필수
 4. **테이블 과잉 금지** — 최종 리포트는 산문 우선 (프로필 카드·타임라인만 허용)
+
+## 예시
+
+발동 후 스킬 프로토콜에 따라 단계별 실행 → 산출물 생성.
+
+---
+
+## Gotchas
+
+| 함정 | 대응 |
+|---|---|
+| 실존 인물 사실과 다른 내용 생성 | 웹 검색 기반 확인 후 작성. 불확실은 명시 |
+| 주관적 판단 과잉 | DNA·강점·약점은 공개 정보 기반으로만 |
+| 개인정보 민감 항목 | 공개된 정보만. 사생활 영역 배제 |
+| 엘베피치 과잉 압축 | 30초 제약 내 핵심 1문장 유지 |
