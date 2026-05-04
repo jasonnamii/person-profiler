@@ -1,9 +1,9 @@
 ---
-name: person-profiler
+name: profiler-skill
 description: "범용 인물 프로파일링 엔진. 웹 리서치 기반 7축 분석(경력DNA·의사결정·비전·평판·개성·관계망·현재상황) → DNA 5~7대 도출 → 강점·약점 판정 → 30초 엘베피치 자동 생성. 심층 분석시 research-frame 연동. P1: 인물 프로파일링, 인물 리서치, 인물 분석, DNA 프로파일링, 사람 분석, person profile, person research. P2: 분석해줘, 프로파일링해줘, 리서치해줘, 조사해줘, profile, research, analyze. P3: person profiling, DNA analysis, elevator pitch, character analysis, reputation analysis. P5: 리포트로, 프로필로, 엘베피치로. NOT: 채용역량평가(→V3/V4.1 전용도구), 조직분석(→직접수행), 정책기획(→policy-planning)."
 ---
 
-# Person Profiler — 인물 프로파일링 엔진
+# Profiler Skill — 프로파일러 스킬
 
 ---
 
@@ -72,14 +72,8 @@ P1 프레임   →  P2 리서치   →  P3 프로파일링  →  P4 엘베피치
 상세 변환 규칙 & 3막 템플릿 → **references/s35-report-conversion.md** 참조
 
 
-### 🚨 MUST cascade → paper-engine (절대규칙)
-
-**리포트 산출 = paper-engine 허브 MUST 경유.** 이 스킬 단독 md/html 출력 = FAIL.
-
-- **진입점:** §4.5(또는 §3.5/§Phase 6) 리포트 변환 직후 paper-engine 발동
-- **paper-engine이 결정:** MODE_S/M/L · NYT구조 · 3패스삭제 · 4항밀도QC · design-skill cascade
-- **산출 포맷:** 기본 **순수 md** (div·style ✗). 사용자가 "HTML로·박스로·벤토로·시각화·카드로" 명시시에만 예외
-- **위반 감지:** md 파일에 `<div style>`·`<span style>` 삽입 = FAIL → 재작성
+### 🚨 MUST cascade → shaper-skill
+모든 산출물 shaper-skill MUST 경유. → `shaper-skill/references/_common/cascade-must.md`
 
 
 ## §4 깊이 제어 (Depth Control)
@@ -106,17 +100,9 @@ P1 프레임   →  P2 리서치   →  P3 프로파일링  →  P4 엘베피치
 ---
 
 
-## §INV NO_WORK_LABEL (산출물·대화 본질 보호)
+## §INV NO_WORK_LABEL
+산출물·대화 작업 라벨 ZERO. → `shaper-skill/references/no-work-label.md`
 
-| 항목 | 정의 |
-|------|------|
-| RULE | 산출물·대화 = 인간 언어. 작업 라벨 ZERO. (1만 페이지 1단어 = FAIL) |
-| 판정 | "이 단어, 이 대화 밖 사람이 사전 없이 읽을 수 있나?" NO → 작업 라벨 → 금지 |
-| ALLOW | 업계 전문용어(DNA·KPI) · 고유명사(인물명·회사명) · 법조문 |
-| CONVERT | 라벨 발견 → 실명·평문 풀어쓰기. 예) "7축(경력DNA·의사결정·비전·평판·개성·관계망·현재상황)·5~7대 DNA·30초 엘베피치" → 실제 축·DNA 항목명 / "심층 분석시 research-frame 연동" → 결과만 노출 |
-| SELF_CHECK | 리포트·프로필·엘베피치 출력 직전에서 자체 스캔. 1개라도 발견 = 차단·재작성. paper-engine cascade 경유 시 INV 13 자동 적용 |
-
----
 
 ## Gotchas
 
